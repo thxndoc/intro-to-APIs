@@ -91,9 +91,9 @@ Given the following URLs from an example API:
 * https://blahblahblah.com/api/v2/products
 * https://blahblahblah.com/api/v2/products/123
 
-2. Which part is the Base URL?
+2. Which part is the Base URL?<br>
 https://blahblahblah.com/api/v2
 
-3. What are the available endpoints?
-/users, /products, /products/<some-id-of-a-product-here> 
+3. What are the available endpoints?<br>
+/users, /products, /products/(some-id-of-a-product-here)<br>
 NOT /products/123
