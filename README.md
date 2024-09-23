@@ -97,3 +97,6 @@ https://blahblahblah.com/api/v2
 3. What are the available endpoints?<br>
 /users, /products, /products/(some-id-of-a-product-here)<br>
 NOT /products/123
+
+#### Methods
+![alt-text](/images/methods.png)
