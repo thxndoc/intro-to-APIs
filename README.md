@@ -113,7 +113,7 @@ This time however, explicitly set the request method to "GET"
 console.log the results
 */
 
-fetch("https://apis.scrimba.com/jsonplaceholder/todos", {method: "GET"})
+fetch("https://apis.scrimba.com/jsonplaceholder/todos", {method: "GET"}) //now has 2 parameters - explicitly saying you want the method to be a GET request
     .then(response => response.json())
     .then(data => console.log(data))
 ```
