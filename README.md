@@ -78,3 +78,5 @@ This means that its happening out of order / out of time
 A protocol is an agreed upon, standard way of doing something.<br>
 HTTP is a protocol for determining how HyperText(text) should be transferred over the internet.<br>
 ![alt-text](/images/request-components.png)
+### More on components of a request
+![alt-text](/images/path-url.png)
