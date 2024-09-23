@@ -27,11 +27,11 @@ Basically just a computer that accepts request a from clients asking for somethi
 ## The request-response cycle
 **What is a request?**<br>
 * When a client asks for a "resource" (data, image, HTML page, authentication token etc.).
-* Requires a connection to the internet somehow, because it needs to sen the request to the server somewhere.
+* Requires a connection to the internet somehow, because it needs to send the request to the server somewhere.
 
 **What is a response?**<br>
 * A reply to the request.
 * Could contain the resource asked for by the client.
 * Could contain a response saying the client isn't authorized to receive the resource.<br>
-![alt-text](./intro-to-APIs/images/request-response.png)
+![screenshot](../intro-to-APIs/images/request-response.png)
 
