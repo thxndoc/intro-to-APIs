@@ -22,4 +22,16 @@ Note that the server doesn't give us access to *everything*(because of security)
 Any device that connects to the internet to get data from somewhere(makes a "request" to a server) - e.g laptop, phone, tablet, smartwatch...any smart device.
 
 ## Servers - what is a server?
-Basically just a computer that accepts requesta from clients asking for something, then responds to the client with that thing (e.g an HTML page, an image, file, or just plain data in a JSON format).
+Basically just a computer that accepts request a from clients asking for something, then responds to the client with that thing (e.g an HTML page, an image, file, or just plain data in a JSON format).
+
+## The request-response cycle
+**What is a request?**<br>
+* When a client asks for a "resource" (data, image, HTML page, authentication token etc.).
+* Requires a connection to the internet somehow, because it needs to sen the request to the server somewhere.
+
+**What is a response?**<br>
+* A reply to the request.
+* Could contain the resource asked for by the client.
+* Could contain a response saying the client isn't authprized to receive the resource.<br>
+![alt-text](/intro-to-APIs/images/request-response.png)
+
