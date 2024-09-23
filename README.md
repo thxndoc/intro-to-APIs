@@ -32,6 +32,6 @@ Basically just a computer that accepts request a from clients asking for somethi
 **What is a response?**<br>
 * A reply to the request.
 * Could contain the resource asked for by the client.
-* Could contain a response saying the client isn't authprized to receive the resource.<br>
-![alt-text](/intro-to-APIs/images/request-response.png)
+* Could contain a response saying the client isn't authorized to receive the resource.<br>
+![alt-text](./intro-to-APIs/images/request-response.png)
 
