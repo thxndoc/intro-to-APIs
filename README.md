@@ -61,7 +61,7 @@ fetch("https://apis.scrimba.com/bored/api/activity")
     .then(response => response.json())
     .then(data => {
         console.log(data)
-        const activityName = document.getElementById("activity-name")
+        const activityName = document.getElementById("activity-name")//in HTML, you create an <h1> element and give it an ID of activity-name
         activityName.textContent = data.activity
     })
 ```
