@@ -33,5 +33,5 @@ Basically just a computer that accepts request a from clients asking for somethi
 * A reply to the request.
 * Could contain the resource asked for by the client.
 * Could contain a response saying the client isn't authorized to receive the resource.<br>
-![screenshot](../images/request-response.png)
+![screenshot](/images/request-response.png)
 
