@@ -35,3 +35,41 @@ Basically just a computer that accepts request a from clients asking for somethi
 * Could contain a response saying the client isn't authorized to receive the resource.<br>
 ![screenshot](/images/request-response.png)
 
+## JSON
+Remember that for an object in JSON, the **keys** are surrounded by ""
+```JavaScript
+{
+    "name": "Thando Chibi",
+    "age": 30,
+    "gender": "Female",
+    "hobbies": [
+        "netball",
+        "drifting",
+        "biking"
+    ]
+}
+```
+## Fetch JSON data with JavaScript fetch API
+```JavaScript
+fetch("https://dog.ceo/api/breeds/image/random")//fetch the resource - in this case, insert URL wrapped in ""
+    .then(response => response.json())// with the response that comes back, change the body of the response from JSON to JavaScript 
+    .then(data => console.log(data))//once you have access to the data, console log the data
+```
+* **Another example**
+```JavaScript
+fetch("https://apis.scrimba.com/bored/api/activity")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+        const activityName = document.getElementById("activity-name")
+        activityName.textContent = data.activity
+    })
+```
+In this case, you don't need `appendChild()` because you're working with an existing element in the DOM, rather than creating a new one. Here's why:<br>
+
+* `document.getElementById`("activity-name") selects an existing element from your HTML that has the id "activity-name".
+* You're directly modifying the `textContent` of this existing element.
+* Since the element is already part of the DOM tree, you don't need to append it anywhere.
+
+## Asynchronous JavaScript
+This means that its happening out of order / out of time
