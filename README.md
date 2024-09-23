@@ -73,3 +73,8 @@ In this case, you don't need `appendChild()` because you're working with an exis
 
 ## Asynchronous JavaScript
 This means that its happening out of order / out of time
+
+## HTTP - HyperText Transfer Protocol
+A protocol is an agreed upon, standard way of doing something.<br>
+HTTP is a protocol for determining how HyperText(text) should be transferred over the internet.<br>
+![alt-text](/intro-to-APIs/images/request-components.png)
