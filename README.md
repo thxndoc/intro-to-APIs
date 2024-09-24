@@ -154,13 +154,14 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 
 ### Principles of REST:
     * Client & Server 
-    
-1. How would you describe what REST is to your non-technical friend?
+![alt-text](/images/client-server-sep.png)
+ 
+1. How would you describe what REST is to your non-technical friend❓<br>
 A standardized way to have your computer, like your laptop, 
 get or send information to another computer (like a server)
 
-2. What does a RESTful API usually return in response to incoming requests?
+2. What does a RESTful API usually return in response to incoming requests❓<br>
 JSON data
 
-3. What kind of client devices can make use of a RESTful API?
+3. What kind of client devices can make use of a RESTful API❓<br>
 All the devices - any device connected to the internet
