@@ -153,7 +153,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 **REST** is a design pattern to provide a standard way for clients and servers to communicate.<br>
 
 ### Principles of REST:
-    * Client & Server 
+#### 📌 - Client & Server 
 ![alt-text](/images/client-server-sep.png)
  
 1. How would you describe what REST is to your non-technical friend❓<br>
@@ -164,4 +164,30 @@ get or send information to another computer (like a server)
 JSON data
 
 3. What kind of client devices can make use of a RESTful API❓<br>
-All the devices - any device connected to the internet
+All the devices - any device connected to the internet (smartwatch, smart fridge, smart vacuum, laptop, phone, tablet etc.)
+
+#### 📌 - Statelessness
+When a client makes a request to a server, the server doesn't maintain any memory of that request.<br> 
+So when a request is sent to the server, the server fulfills that request if it can, sends back a response, and then forgets everything about that request and the client that made that request.
+
+#### 📌 - Accessing "Resources"
+![alt-text](/images/resources.png)
+In the above example, when using a noun, you'll be getting an array or a collection of the data, which in this case is the bikes<br>
+
+#### 📌 - Nested Resources
+![alt-text](/images/nested-resources.png)
+In the above example, when using a noun, you'll be getting an array or a collection of the data, which in this case is the reviews of that specific bike.<br>
+
+* **Quiz**
+1. How is a nested resource URL like /bikes/123/reviews
+   different from an endpoint like /reviews ❓<br>
+    * /bikes/123/reviews - return an array of reviews about that specific bike
+    * /reviews - return an array of all reviews on the site
+
+2. What URL might you use to GET the review with an ID of 5 on the bike
+   with the ID of 123❓<br>
+    
+    * /bikes/123/reviews/5
+
+3. Describe a "URL Parameter" in your own words:❓
+    * Variable inside the URL that acts as a placeholder for the real value (oftentimes they replace the ID of the resource)
