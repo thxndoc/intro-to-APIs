@@ -99,7 +99,7 @@ https://blahblahblah.com/api/v2
 NOT /products/123
 
 #### Methods
-![alt-text](/images/methods.png)
+![alt-text](/images/methods.png)<br>
 HTTP defines a set of request **methods** to indicate the purpose of the request and what is expected if the request is successful.
 **Challenge - GET**
 ```JavaScript
