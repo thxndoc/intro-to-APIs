@@ -293,8 +293,9 @@ fetch("https://apis.scrimba.com/openweathermap/data/2.5/weather?q=johannesburg&u
 **Google Slides**👇🏽<br>
 * [HTTP Requests](https://docs.google.com/presentation/d/e/2PACX-1vSxS5iMjTveO-IBqdDE65dgouZStLTW-Vlyt3N9js3FnMCeW8cwSgmrkGzX2i_g0qGCM6fJDKZ-r3Se/pub?start=false&loop=false&delayms=3000&slide=id.g7fabbaef24_1_232)
 
-* [REST](https://docs.google.com/presentation/d/e/2PACX-1vTEztADtG8OhJ4695LYwtVftNgriQK7zAOsYNru9OfaPA1mQEAlkNd1BqgOdec1aZRC6PxSxOnlrBeH/pub?start=false&loop=false&delayms=3000&slide=id.g7fabbaef24_1_232)
+* [REST](https://docs.google.com/presentation/d/e/2PACX-1vTEztADtG8OhJ4695LYwtVftNgriQK7zAOsYNru9OfaPA1mQEAlkNd1BqgOdec1aZRC6PxSxOnlrBeH/pub?start=false&loop=false&delayms=3000&slide=id.g7fabbaef24_1_232)<br>
 
+**Zapier Course**<br>
 * [Zapier's introduction to APIs](https://zapier.com/resources/guides/apis)<br>
 
 **In-depth REST API tutorials**👇🏽<br>
