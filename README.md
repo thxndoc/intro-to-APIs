@@ -149,7 +149,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 #### Headers
 ![alt-text](/images/headers.png)
 
-## REST - REepresentational State Transfer
+## REST - REpresentational State Transfer
 **REST** is a design pattern to provide a standard way for clients and servers to communicate.<br>
 
 ### Principles of REST:
@@ -191,3 +191,111 @@ In the above example, when using a noun, you'll be getting an array or a collect
 
 3. Describe a "URL Parameter" in your own words:❓
     * Variable inside the URL that acts as a placeholder for the real value (oftentimes they replace the ID of the resource)
+```JavaScript
+/**
+ * Challenge: GET all the comments from the blog post with ID of 2 and log to the console
+ * 
+ * BaseURL: https://apis.scrimba.com/jsonplaceholder/
+ * Endpoint: ??? (Check JSON Placeholder docs: https://jsonplaceholder.typicode.com/guide/ and look for the "Listing nested resources" section)
+ */
+
+fetch("https://apis.scrimba.com/jsonplaceholder/posts/2/comments")
+    .then(response => response.json())
+    .then(data => console.log(data))
+```
+
+### Query Strings - a way to filter results (parameters)
+![alt-text](/images/query-strings.png)<br>
+The `?` is what kicks off the query string. You can add multiple queries using a `&`<br>
+
+* **Quiz**
+At Mike's Bikes, they also sell bike racks (endpoint is /bikeracks).<br>
+
+**What would you expect the endpoints to be for the following tasks:**
+
+1. Get a list of all bike racks sold on the site❓<br>
+    * /bikeracks
+
+2. Get a list of all bike racks available in the physical store right now❓<br>
+   (Assume a query called "available" that is a boolean true/false)<br>
+    * /bikeracks?available=true  ==> {available: "true"} (Will be parsed as a string)
+
+3. Get a list of all "Thule"-brand bike racks that can hold 4 bikes❓<br>
+   (Assume there are "brand" and "numBikes" queries)<br>
+    * /bikeracks?brand=thule&numBikes=4
+
+```JavaScript
+/**
+ * Challenge part 1: GET the current weather for your city with 
+ * the Open Weather API and log it to the console.
+ * 
+ * BaseURL: https://apis.scrimba.com/openweathermap/data/2.5/
+ * Endpoint: /weather
+ * Query: ??? (https://openweathermap.org/current)
+    * NOTE: It says you need to include `appid` in your query, but you can skip that this time
+    
+Challenge part 2: change the units into something that makes more sense to you
+than Kelvin 😂
+ */
+
+fetch("https://apis.scrimba.com/openweathermap/data/2.5/weather?q=johannesburg&units=metric")
+    .then(res => res.json())
+    .then(data => console.log(data))
+    
+/**
+
+{
+	coord: {
+		lon: -111.8911,
+		lat: 40.7608
+	},
+	weather: [{
+		id: 803,
+		main: "Clouds",
+		description: "broken clouds",
+		icon: "04d"
+	}],
+	base: "stations",
+	main: {
+		temp: 299.87,
+		feels_like: 299.22,
+		temp_min: 295.22,
+		temp_max: 303,
+		pressure: 1005,
+		humidity: 25
+	},
+	visibility: 10000,
+	wind: {
+		speed: 2.24,
+		deg: 299,
+		gust: 4.92
+	},
+	clouds: {
+		all: 75
+	},
+	dt: 1621458383,
+	sys: {
+		type: 2,
+		id: 2032870,
+		country: "US",
+		sunrise: 1621425998,
+		sunset: 1621478505
+	},
+	timezone: -21600,
+	id: 5780993,
+	name: "Salt Lake City",
+	cod: 200
+}
+
+ */
+```
+## Extra Resources
+**Google Slides**👇🏽<br>
+* [HTTP Requests](https://docs.google.com/presentation/d/e/2PACX-1vSxS5iMjTveO-IBqdDE65dgouZStLTW-Vlyt3N9js3FnMCeW8cwSgmrkGzX2i_g0qGCM6fJDKZ-r3Se/pub?start=false&loop=false&delayms=3000&slide=id.g7fabbaef24_1_232)
+
+* [REST](https://docs.google.com/presentation/d/e/2PACX-1vTEztADtG8OhJ4695LYwtVftNgriQK7zAOsYNru9OfaPA1mQEAlkNd1BqgOdec1aZRC6PxSxOnlrBeH/pub?start=false&loop=false&delayms=3000&slide=id.g7fabbaef24_1_232)
+
+* [Zapier's introduction to APIs](https://zapier.com/resources/guides/apis)<br>
+
+**In-depth REST API tutorials**👇🏽<br>
+* [restfulapi.net](https://restfulapi.net/)
