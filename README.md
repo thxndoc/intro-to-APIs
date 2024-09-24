@@ -149,3 +149,18 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
 #### Headers
 ![alt-text](/images/headers.png)
 
+## REST - REepresentational State Transfer
+**REST** is a design pattern to provide a standard way for clients and servers to communicate.<br>
+
+### Principles of REST:
+    * Client & Server 
+    
+1. How would you describe what REST is to your non-technical friend?
+A standardized way to have your computer, like your laptop, 
+get or send information to another computer (like a server)
+
+2. What does a RESTful API usually return in response to incoming requests?
+JSON data
+
+3. What kind of client devices can make use of a RESTful API?
+All the devices - any device connected to the internet
