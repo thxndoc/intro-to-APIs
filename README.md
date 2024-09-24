@@ -101,6 +101,7 @@ NOT /products/123
 #### Methods
 ![alt-text](/images/methods.png)
 HTTP defines a set of request **methods** to indicate the purpose of the request and what is expected if the request is successful.
+**Challenge - GET**
 ```JavaScript
 /**
 Challenge: 
@@ -118,3 +119,33 @@ fetch("https://apis.scrimba.com/jsonplaceholder/todos", {method: "GET"}) //now h
     .then(response => response.json())
     .then(data => console.log(data))
 ```
+**Challenge - GET**
+```JavaScript
+/**
+ Challenge:
+ 
+ GET a list of blog posts from the JSON Placeholder API.
+ 
+ BaseURL: https://apis.scrimba.com/jsonplaceholder/
+ Endpoint: /posts
+ 
+ Since there's so many posts, let's limit the array to just 5 items.
+ You can use the `.slice()` array method to just grab the first 5 objects
+ from the data array that comes back from the API
+ 
+ Log the 5 items to the console
+ */
+fetch("https://apis.scrimba.com/jsonplaceholder/posts")
+    .then(response => response.json())
+    .then(data => {
+        //console.log(data)
+        const postsArr = data.slice(0, 5)
+        console.log(postsArr)
+    })
+```
+#### Body
+![alt-text](/images/body.png)
+
+#### Headers
+![alt-text](/images/headers.png)
+
